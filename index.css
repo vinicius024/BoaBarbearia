@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Cabeçalho*/
+.header {
+    background: #1D86FA;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+}
+
+.menu {
+    background: none;
+
+    width: 500px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.seletores {
+    color: #FFFFFF;
+    list-style-type: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.seletores:hover {
+    color: #404040;
+    transition-delay: 100ms;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+/* Parte de apresentação*/
+.parte_um {
+    background-image: url('https://images.unsplash.com/photo-1592647420148-bfcc177e2117?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1139&q=80');
+    background-size: 100%;
+    height: 930px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.titulo {
+    color: #FFFFFF;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+
+    margin: 300px 0px 60px 0px;
+}
+
+.paragrafo {
+    color: #FFFFFF;
+    width: 900px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-justify: auto;
+}
+
+/*Parte de Agendamento e horarios*/
+
+.parte_dois {
+    height: 820px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_horario {
+    color:#1D86FA;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 100px 0px 0px 0px;
+}
+
+.container {
+    height: 360px;
+    width: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px 0px 12px 0px;
+}
+
+.cliente_um {
+    width: 100px;
+    height: 150px;
+
+    grid-area: imagem_um;
+}
+
+.cliente_um:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cliente_dois {
+    width: 100px;
+    height: 150px;
+
+    grid-area: imagem_dois;
+}
+
+.cliente_dois:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cliente_tres {
+    width: 200px;
+    height: 312px;
+
+    grid-area: imagem_tres;
+}
+
+.cliente_tres:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Grid_image {
+
+    background: none;
+    height: 312px;
+    width: 312px;
+
+    align-items: center;
+    justify-content: center;
+
+    display: grid;
+	grid-template-areas: 
+    ' . . . imagem_um imagem_tres . . .'
+    '. . . imagem_dois  imagem_tres . . .'
+    ;
+    gap: 12px;
+
+}
+
+.tabela_horario {
+    background: none;
+    width: 312px;
+    height: 312px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_tabela {
+    color: #00A6A6;
+    margin: 0px 0px 24px 0px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.barra_azul {
+    background: rgba(29, 134, 250, .2);
+    width: 312px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px 0px 24px;
+}
+
+.barra_branca {
+    background: rgba(217, 217, 217, .2);
+    width: 312px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px 0px 24px;
+}
+
+.texto_tabela {
+    color: #404040;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.button_agendar {
+    width: 150px;
+    height: 50px;
+    color: #FFFFFF;
+    background: #1D86FA;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    left: 274px;
+}
+
+.button_agendar:hover {
+
+    background: #145aa4;
+    transition-delay: 100ms;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+/*Parte de Cards dos Funcionarios*/
+
+.parte_tres {
+    background: #404040;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_funcionarios {
+    color:#1D86FA;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 60px 0px 0px 0px;
+}
+
+.box_cards {
+    background: none;
+    width: 1090px;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0px 0px 0px;
+}
+
+.card_thomas {
+    background-image: url('https://images.unsplash.com/photo-1589315876349-1201fd1baaef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=452&q=80');
+    background-size: 100%;
+    width: 280px;
+    height: 350px;
+}
+
+.name_thomas {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 215px 0px 12px 24px;
+    
+}
+.star_card {
+    margin: 0px 0px 12px 24px;
+}
+
+.button_thomas {
+    width: 100px;
+    height: 36px;
+    border: none;
+
+    background: #1D86FA;
+    color: #FFFFFF;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    margin: 0px 0px 0px 24px;
+    cursor: pointer;
+}
+
+.button_thomas:hover {
+    background: #145aa4;
+    transition-delay: 150ms;
+    transition-duration: 250ms;
+}
+
+.card_jhonatan {
+    background-image: url('https://images.unsplash.com/photo-1582893561942-d61adcb2e534?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=391&q=80');
+    background-size: 100%;
+    width: 280px;
+    height: 350px;
+}
+
+.name_jhonatan {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 215px 0px 12px 24px;
+    
+}
+.star_card {
+    margin: 0px 0px 12px 24px;
+}
+
+.button_jhonatan {
+    width: 100px;
+    height: 36px;
+    border: none;
+
+    background: #1D86FA;
+    color: #FFFFFF;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    margin: 0px 0px 0px 24px;
+    cursor: pointer;
+}
+
+.button_jhonatan:hover {
+    background: #145aa4;
+    transition-delay: 150ms;
+    transition-duration: 250ms;
+}
+
+/*Parte de localização*/
+
+.parte_quatro {
+    background: none;
+    height: 820px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_location {
+    color:#1D86FA;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 60px 0px 0px 0px;
+}
+
+.box_location {
+    background: none;
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box_redes_sociais {
+    background: none;
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box_dados {
+    background: none;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.texto_dados {
+    color: #00A6A6;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+
+    margin: 0px 0px 0px 24px;
+}
+
+.mapa {
+    width: 600px;
+    height: 400px;
+}
+
+/*Parte cinco Apresentação com video*/
+
+.parte_cinco {
+    background: #404040;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_trabalho {
+    color:#1D86FA;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 60px 0px 60px 0px;
+}
+
+.footer {
+    background: #1D86FA;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
